@@ -1,2 +1,2 @@
-# wp-autolevels.js
-Simple Wordpress plugin to automatically correct image levels using JavaScript
+# wp-autolevel.js
+Simple Wordpress plugin to automatically correct images levels using JavaScript
