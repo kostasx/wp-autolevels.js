@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
     image.insertAdjacentHTML('afterend', '<canvas></canvas>');
     canvas = image.nextElementSibling;
-    // image.onload = function(){}
 
       var ctx = canvas.getContext('2d');
 
