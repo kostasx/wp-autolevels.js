@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function(){
    */
   var colorLevel = function(image){  
 
-    console.log(image);
     image.insertAdjacentHTML('afterend', '<canvas></canvas>');
     canvas = image.nextElementSibling;
     // image.onload = function(){}
@@ -21,8 +20,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
       canvas.width = image.width;
       canvas.height = image.height;
-
-      console.log(canvas.height, canvas.width);
 
       ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
       var imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);

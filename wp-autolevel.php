@@ -1,5 +1,4 @@
 <?php
-
 /*
 Plugin Name: WP AutoLevels.js
 Plugin URI: https://github.com/kostasx/wp-autolevels.js
@@ -9,11 +8,11 @@ Version: 0.1.0
 Author URI: https://github.com/kostasx/
 */
 
-function wptuts_styles_with_the_lot()
+function enqueue_auto_level_js()
 {
      
   wp_register_script( 'auto-level-js', plugins_url( '/js/auto-level.js', __FILE__ ) );
   wp_enqueue_script( 'auto-level-js' );
 
 }
-add_action( 'wp_enqueue_scripts', 'wptuts_styles_with_the_lot' );
+add_action( 'wp_enqueue_scripts', 'enqueue_auto_level_js' );
