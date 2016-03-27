@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
   // FIND ALL IMAGES WITH A .level-correction CLASS AND APPLY THE LEVEL NORMALIZATION ALGORITHM
   Array.prototype.slice.apply(document.querySelectorAll('img.level-correction')).forEach(function(img){
-    colorLevel(img);
+    img.onload = colorLevel(img);
   });
 
 });
